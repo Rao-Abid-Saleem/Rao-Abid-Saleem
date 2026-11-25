@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-tenant SaaS architecture — clients, API, domain modules, and data layer</title>
+  <desc id="desc">React web apps and mobile apps connect over HTTPS and WebSockets to one Node.js API (Express or NestJS) that scopes every request to a tenant. Auth and tenancy, billing and invoicing, documents and catalogs, and realtime modules sit behind it, backed by MongoDB, PostgreSQL, S3 and Supabase storage, and Firebase, email, and SMS notifications. CI/CD ships Docker images to AWS ECS.</desc>
+
+  <defs>
+    <linearGradient id="topline" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="0.5" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(960 10) rotate(135) scale(370 270)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#475569"/>
+    </marker>
+    <clipPath id="frame">
+      <rect width="1000" height="400" rx="24"/>
+    </clipPath>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="400" fill="#0B1120"/>
+    <rect width="1000" height="400" fill="url(#grid)" opacity="0.35"/>
+    <rect width="1000" height="400" fill="url(#halo)"/>
+    <rect width="1000" height="4" fill="url(#topline)"/>
+
+    <text x="40" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="2" fill="#6EE7B7">SAAS ARCHITECTURE / MULTI-TENANT</text>
+    <text x="40" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.6" fill="#F8FAFC">One API. Every client. Every tenant isolated.</text>
+
+    <rect x="40" y="120" width="190" height="96" rx="14" fill="#111827" stroke="#1F2937"/>
+    <text x="56" y="143" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.3" fill="#6EE7B7">CLIENTS</text>
+    <text x="56" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="650" fill="#F8FAFC">React web apps</text>
+    <text x="56" y="187" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94A3B8">Mobile apps</text>
+    <text x="56" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="8.5" fill="#64748B">ADMIN · PORTAL · iOS · ANDROID</text>
+
+    <path d="M230 168H276" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="253" y="157" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="8.5" fill="#475569">HTTPS</text>
+    <text x="253" y="186" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="8.5" fill="#475569">WS</text>
+
+    <rect x="286" y="132" width="154" height="72" rx="14" fill="#111827" stroke="#1F2937"/>
+    <text x="302" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="1.2" fill="#34D399">EDGE</text>
+    <text x="302" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="650" fill="#F8FAFC">Node.js API</text>
+    <text x="302" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" fill="#64748B">Express · NestJS</text>
+
+    <path d="M440 168H472" stroke="#475569" stroke-width="1.5"/>
+    <path d="M472 98V308" stroke="#475569" stroke-width="1.5"/>
+    <path d="M472 98H504" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M472 168H504" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M472 238H504" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M472 308H504" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+      <rect x="512" y="70" width="208" height="56" rx="12" fill="#111827" stroke="#1F2937"/>
+      <rect x="512" y="82" width="3" height="32" rx="1.5" fill="#34D399"/>
+      <text x="528" y="92" font-size="13.5" font-weight="650" fill="#F8FAFC">Auth &amp; tenancy</text>
+      <text x="528" y="109" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" fill="#64748B">JWT · RBAC · invites</text>
+      <rect x="512" y="140" width="208" height="56" rx="12" fill="#111827" stroke="#1F2937"/>
+      <rect x="512" y="152" width="3" height="32" rx="1.5" fill="#2DD4BF"/>
+      <text x="528" y="162" font-size="13.5" font-weight="650" fill="#F8FAFC">Billing &amp; invoicing</text>
+      <text x="528" y="179" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" fill="#64748B">Stripe · PDF invoices</text>
+      <rect x="512" y="210" width="208" height="56" rx="12" fill="#111827" stroke="#1F2937"/>
+      <rect x="512" y="222" width="3" height="32" rx="1.5" fill="#38BDF8"/>
+      <text x="528" y="232" font-size="13.5" font-weight="650" fill="#F8FAFC">Documents &amp; catalogs</text>
+      <text x="528" y="249" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" fill="#64748B">PDF · e-sign · imports</text>
+      <rect x="512" y="280" width="208" height="56" rx="12" fill="#111827" stroke="#1F2937"/>
+      <rect x="512" y="292" width="3" height="32" rx="1.5" fill="#FBBF24"/>
+      <text x="528" y="302" font-size="13.5" font-weight="650" fill="#F8FAFC">Realtime</text>
+      <text x="528" y="319" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" fill="#64748B">Socket.IO · chat · live</text>
+    </g>
+
+    <path d="M720 98H752M720 168H752M720 238H752M720 308H752" stroke="#334155" stroke-width="1.2"/>
+    <path d="M752 98V308" stroke="#334155" stroke-width="1.2"/>
+    <path d="M752 203H772" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <rect x="780" y="70" width="180" height="266" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <text x="796" y="94" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="1.2" fill="#94A3B8">DATA &amp; SERVICES</text>
+    <line x1="780" y1="106" x2="960" y2="106" stroke="#1E293B"/>
+
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+      <rect x="796" y="128" width="7" height="7" rx="2" fill="#47A248"/>
+      <text x="812" y="134" font-size="11.5" font-weight="600" fill="#E2E8F0">MongoDB</text>
+      <text x="812" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9" fill="#64748B">Mongoose · documents</text>
+      <rect x="796" y="184" width="7" height="7" rx="2" fill="#4169E1"/>
+      <text x="812" y="190" font-size="11.5" font-weight="600" fill="#E2E8F0">PostgreSQL</text>
+      <text x="812" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9" fill="#64748B">Prisma · relational</text>
+      <rect x="796" y="240" width="7" height="7" rx="2" fill="#F59E0B"/>
+      <text x="812" y="246" font-size="11.5" font-weight="600" fill="#E2E8F0">S3 · Supabase</text>
+      <text x="812" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9" fill="#64748B">files · edge functions</text>
+      <rect x="796" y="296" width="7" height="7" rx="2" fill="#FFCA28"/>
+      <text x="812" y="302" font-size="11.5" font-weight="600" fill="#E2E8F0">Firebase · email · SMS</text>
+      <text x="812" y="316" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9" fill="#64748B">notifications</text>
+    </g>
+
+    <rect x="40" y="344" width="920" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" fill="#64748B" text-anchor="middle">
+      <text x="190" y="362">CI/CD · GitHub Actions</text>
+      <text x="500" y="362">CONTAINERS · Docker → AWS ECR / ECS</text>
+      <text x="810" y="362">QUALITY · TypeScript · Jest · Playwright</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="999" height="399" rx="23.5" stroke="#1E293B"/>
+    <rect x="0.5" y="0.5" width="999" height="399" rx="23.5" fill="none" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-dasharray="700 2056" opacity="0.22" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="2756" dur="6s" repeatCount="indefinite"/></rect>
+    <rect x="0.5" y="0.5" width="999" height="399" rx="23.5" fill="none" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-dasharray="460 2296" opacity="0.45" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="2756" dur="6s" repeatCount="indefinite"/></rect>
+    <rect x="0.5" y="0.5" width="999" height="399" rx="23.5" fill="none" stroke="#34D399" stroke-width="4" stroke-linecap="round" stroke-dasharray="260 2496" opacity="1.0" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="2756" dur="6s" repeatCount="indefinite"/></rect>
+
+  </g>
+</svg>

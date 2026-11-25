@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Full-stack feature delivery — model, API, UI, realtime, ship</title>
+  <desc id="desc">A feature is built end to end: a Mongoose or Prisma schema with migrations and indexes, Express or NestJS endpoints with guards and validation, a React interface with Tailwind or MUI and TanStack Query or SWR, and Socket.IO events for chat and live updates. It ships through Docker, GitHub Actions, AWS ECS, Supabase, and Cloudflare.</desc>
+
+  <defs>
+    <linearGradient id="topline" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="0.5" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(960 10) rotate(135) scale(370 270)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#94A3B8"/>
+    </marker>
+    <clipPath id="frame">
+      <rect width="1000" height="340" rx="24"/>
+    </clipPath>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="340" fill="#F8FAFC"/>
+    <rect width="1000" height="340" fill="url(#grid)" opacity="0.6"/>
+    <rect width="1000" height="340" fill="url(#halo)"/>
+    <rect width="1000" height="4" fill="url(#topline)"/>
+
+    <text x="40" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="2" fill="#047857">FULL-STACK / FEATURE DELIVERY</text>
+    <text x="40" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.6" fill="#0F172A">One feature, database to dashboard</text>
+    <text x="960" y="72" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">typed end to end</text>
+
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+      <rect x="40" y="108" width="190" height="106" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <circle cx="56" cy="130" r="3" fill="#059669"/>
+      <text x="68" y="134" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.3" fill="#059669">01 / MODEL</text>
+      <text x="56" y="164" font-size="19" font-weight="700" fill="#0F172A">Schema</text>
+      <text x="56" y="188" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#475569">Mongoose · Prisma</text>
+      <text x="56" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#64748B">migrations + indexes</text>
+      <rect x="288" y="108" width="190" height="106" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <circle cx="304" cy="130" r="3" fill="#0D9488"/>
+      <text x="316" y="134" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.3" fill="#0D9488">02 / API</text>
+      <text x="304" y="164" font-size="19" font-weight="700" fill="#0F172A">Endpoints</text>
+      <text x="304" y="188" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#475569">Express · NestJS</text>
+      <text x="304" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#64748B">guards + validation</text>
+      <rect x="536" y="108" width="190" height="106" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <circle cx="552" cy="130" r="3" fill="#0284C7"/>
+      <text x="564" y="134" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.3" fill="#0284C7">03 / UI</text>
+      <text x="552" y="164" font-size="19" font-weight="700" fill="#0F172A">Interface</text>
+      <text x="552" y="188" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#475569">React · Tailwind · MUI</text>
+      <text x="552" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#64748B">TanStack Query · SWR</text>
+      <rect x="784" y="108" width="190" height="106" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <circle cx="800" cy="130" r="3" fill="#D97706"/>
+      <text x="812" y="134" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.3" fill="#D97706">04 / LIVE</text>
+      <text x="800" y="164" font-size="19" font-weight="700" fill="#0F172A">Realtime</text>
+      <text x="800" y="188" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#475569">Socket.IO events</text>
+      <text x="800" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" fill="#64748B">chat + live updates</text>
+    </g>
+
+    <path d="M238 161H278" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M486 161H526" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M734 161H774" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="8.5" fill="#94A3B8" text-anchor="middle">
+      <text x="258" y="151">types</text>
+      <text x="506" y="151">json</text>
+      <text x="754" y="151">events</text>
+    </g>
+
+    <rect x="40" y="242" width="934" height="62" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="64" cy="273" r="4" fill="#059669"/>
+    <text x="78" y="268" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.3" fill="#059669">05 / SHIP</text>
+    <text x="78" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#475569">Docker · GitHub Actions · AWS ECS · Supabase · Cloudflare · reviewed, tested, deployed</text>
+    <text x="950" y="279" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9.5" fill="#64748B">to production</text>
+
+    <rect x="0.5" y="0.5" width="999" height="339" rx="23.5" stroke="#E2E8F0"/>
+    <rect x="0.5" y="0.5" width="999" height="339" rx="23.5" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-dasharray="700 1936" opacity="0.22" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="2636" dur="6s" repeatCount="indefinite"/></rect>
+    <rect x="0.5" y="0.5" width="999" height="339" rx="23.5" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-dasharray="460 2176" opacity="0.45" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="2636" dur="6s" repeatCount="indefinite"/></rect>
+    <rect x="0.5" y="0.5" width="999" height="339" rx="23.5" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round" stroke-dasharray="260 2376" opacity="1.0" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="2636" dur="6s" repeatCount="indefinite"/></rect>
+
+  </g>
+</svg>
